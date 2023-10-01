@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 8</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+        body{
+            font-size: 14px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(
+          rgb(230, 238, 200),
+          rgba(196, 136, 211, 0.551),
+          rgba(199, 22, 190, 0.604)
+        );
+            width: 50%;
+            margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .right{
+            text-align: right;
+            font-weight: 500;
+        }
+        .mywidth{
+            width: 400px;
+        }
+        .tbl{
+            border-collapse: separate;
+            border-spacing: 10px 10px;
+        }
+        .formerror{
+            border: 2px solid red;
+        }
+        .formsuc{
+            border: 2px solid rgb(51, 206, 51);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form  onsubmit="return valid()" action="">
+        <table class="tbl">
+            <h1 style="text-align: center;"> Registration form</h1>
+            <tr>
+                <td class="right">First Name:</td>
+                <td><input type="text" name="" id="fn" class="mywidth"> <span id="err1" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span></td>
+            </tr>
+            <tr>
+                <td class="right">Last Name:</td>
+                <td><input type="text" name="" id="ln" class="mywidth"> <span id="err2" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span></td>
+            </tr>
+            <tr>
+                <td class="right">Email:</td>
+                <td><input type="email" name="" id="em" class="mywidth"> <span id="err3" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span></td>
+            </tr>
+            <tr>
+                <td class="right">Password:</td>
+                <td><input type="password" name="" id="pwd" class="mywidth"> <span id="err4" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span</td>
+            </tr>
+            <tr>
+                <td class="right">Re-enter Password:</td>
+                <td><input type="password" name="" id="rpwd" class="mywidth"> <span id="err5" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR OR MISMATCH</span</td>
+            </tr>
+            <tr>
+                <td class="right">Gender:</td>
+                <td>
+                    <div style="padding-left: 15px;">
+                        <input type="radio"   name="gender"><span>Male</span><br>
+                        <input type="radio" name="gender">Female
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="right">Age:</td>
+                <td><input type="number" name="" id="age" class="mywidth"> <span id="err6" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span</td>
+            </tr>
+            <tr>
+                <td class="right">Phone Number:</td>
+                <td><input type="number" name="" id="pn" class="mywidth"> <span id="err7" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span</td>
+            </tr>
+            <tr>
+                <td class="right">Address:</td>
+                <td><textarea name="" id="add" cols="30" rows="4" class="mywidth" ></textarea> <span id="err8" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span</td>
+            </tr>
+            <tr>
+                <td class="right">State:</td>
+                <td><input type="number" name="" id="st" class="mywidth"> <span id="err9" style="visibility: hidden;color: red; font-weight: bold;">&nbsp;*POOR</span</td>
+            </tr>
+            <tr>
+                <td class="right">Name:</td>
+                <td>
+                    <select name=""  >
+                        <option value="" style="font-weight:100;">Choose your country</option>
+                        <option value="" style="font-weight:400;">India</option>
+                        <option value="" style="font-weight:400;">America</option>
+                        <option value="" style="font-weight:400;">Africa</option>
+                        <option value="" style="font-weight:400;">Sri lanka</option>
+                        <option value="" style="font-weight:400;">Pakisthan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="right">Languages Known:</td>
+                <td>
+                     <input type="checkbox">English&nbsp;&nbsp;
+                     <input type="checkbox">Kannada&nbsp;&nbsp;
+                     <input type="checkbox">Hindi&nbsp;&nbsp;
+                     <input type="checkbox">Telugu&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" style="font-weight: 500;text-align: left;">
+                    <input type="checkbox" name="" id="">Hereby I declare all the given details are true 
+                </th>
+                
+            </tr>
+            <tr>
+                <th colspan="2" style="font-weight: 500; text-align: right ;">
+                Log in to <a href="https://ethnus.com/" style="text-decoration: underline;">Ethnus</a> website
+                    
+                </th>
+            </tr>
+           
+        </table>
+        <div style="text-align: center; padding: 5px;">
+            <button class="btn btn-danger" type="submit" style="width: 35%;"> Register</button>
+        </div>
+      </form>
+    </div>
+    <footer style="text-align: center; background-color: black; color: white; bottom: 0; position: fixed; width: 100%;">
+        Copyright &copy;  All rights Reserved - AKASH 21BCE5812 <span><i class="fa-regular fa-face-laugh-wink" style="color: #fcfcfd;"></i></span>
+    </footer>
+    <script src="js8.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+<script src="https://kit.fontawesome.com/786a53d443.js" crossorigin="anonymous"></script>
+  </body>
+</html>

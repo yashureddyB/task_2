@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: rgba(128, 128, 128, 0.136);
+    padding: 15px;
+    width: 50%;
+  }
+  .container form div{
+    display: flex;
+  }
+  label{
+    width: 30%;
+  }
+  button{
+    color: white;
+    margin-left: 325px;
+  }

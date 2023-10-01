@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style6.css">
+  <style>
+    .container{
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.066);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 0px;
+    border-radius: 25px;
+
+  }
+ 
+  label{
+    margin-left: 195px;
+  }
+ input ,textarea{
+    border-radius: 8px;
+ }
+ .formerror{
+    border: 2px solid red;
+ }
+ .ck{
+    text-align: center;
+ }
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center;margin-top: 45px;">Registration</h1>
+   <div class="container">
+      <form  onsubmit="return validate();">
+        <label for="">Name</label>
+        <input type="text" id="name">
+        <label for="" id="vbl1" style="color: red; visibility: hidden; margin:0">&nbsp;*This field is required</label><br><br>
+        <label for="">Email</label>
+        <input type="email" id="email">
+        <label for="" id="vbl2" style="color: red; visibility: hidden; margin:0">&nbsp;*A valid Email address is required</label><br><br>
+        <label for="">Website</label>
+        <input type="text" id="web">
+        <label for="" id="vbl3" style="color: red; visibility: hidden; margin:0">&nbsp;*A valid url is required</label><br><br>
+        <label for="">Message</label>
+        <textarea name="" id="txt" cols="20" rows="3"></textarea>
+        <label for="" id="vbl4" style="color: red; visibility: hidden; margin:0">&nbsp;*This field is required</label><br><br>
+        <div class="ck">
+            <button  class="btn btn-primary" type="submit" id="bn" style="width: 45%;">Submit</button>
+
+        </div>
+      </form>
+    </div>
+
+    <footer style="text-align: center; background-color: black; color: white; bottom: 0; position: fixed; width: 100%;">
+      Copyright &copy;  All rights Reserved - AKASH 21BCE5812 <span><i class="fa-regular fa-face-laugh-wink" style="color: #fcfcfd;"></i></span>
+  </footer>
+<script src="js5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/786a53d443.js" crossorigin="anonymous"></script>
+
+        
+</body>
+</html>

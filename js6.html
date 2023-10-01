@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 6</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+        .container{
+            text-align: center;
+            width: 22%;
+            height: 42vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 150px;
+            padding: 25px;
+            background-color: rgba(128, 128, 128, 0.085);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+       <div class="img">
+        <h1 style="font-weight: lighter;"><i>Instagram</i> </h1>
+       </div>
+       <form  onsubmit="return valid()" action="">
+        <div class="input-group ">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><span><i class="fa-solid fa-user"></i></span></div>
+            </div>
+            <input    type="text" class="form-control" id="un" placeholder="Username">
+            <br>
+            
+          </div>
+          <div  id="un1"  class="input-group" style="visibility:hidden ;text-align: center; color: red;">
+            * Invalid Username
+                </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><span><i class="fa-solid fa-lock"></i></span></div>
+            </div>
+            <input type="password" class="form-control" id="up" placeholder="Password">
+          </div>
+          <div   id="up2" class="input-group" style="visibility:hidden ;text-align: center; color: red;">
+            * Invalid Password
+                </div>
+          <button class="btn btn-primary form-control" type="submit">Login</button>
+        </form>
+          <div class="last" style="margin-top: 25px;">
+            <div class="rem" style="float: left;">
+            <input type="checkbox" >Remember me
+            </div>
+            <p    style="float: right; ">  <a href="">Forgot password?</a></p>
+          </div>
+    </div>
+    <p style="text-align: center ;margin-top: 15px; ">Don't have an account!&nbsp;<a href="">Sign up here.</a></p>
+    <footer style="text-align: center; background-color: black; color: white; bottom: 0; position: fixed; width: 100%;">
+      Copyright &copy;  All rights Reserved - AKASH 21BCE5812 <span><i class="fa-regular fa-face-laugh-wink" style="color: #fcfcfd;"></i></span>
+  </footer>
+
+    <script src="js6.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+<script src="https://kit.fontawesome.com/786a53d443.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
